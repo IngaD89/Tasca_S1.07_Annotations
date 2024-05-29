@@ -2,19 +2,20 @@ package org.example.n1exercici1_2;
 
 public class EmployeeOnline extends Employee{
 
-    private final double netTariff;
+    private final double NET_TARIFF;
 
-    public EmployeeOnline(String name, String lastName, double pricePerHour, double netTariff) {
+    public EmployeeOnline(String name, String lastName, double pricePerHour, double NET_TARIFF) {
         super(name, lastName, pricePerHour);
-        this.netTariff = netTariff;
+        this.NET_TARIFF = NET_TARIFF;
     }
 
-    public double getNetTariff() {
-        return this.netTariff;
+    public double getNET_TARIFF() {
+        return this.NET_TARIFF;
     }
 
     @Override
     public double calculateSalary(int hour){
-        return super.getPricePerHour() * hour;
+        System.out.println("Ejercicio 1: calcular salario de trabajador remoto");
+        return (super.getPricePerHour() * hour) + NET_TARIFF;
     }
 }

@@ -13,12 +13,14 @@ public class EmployeeOnSite extends Employee{
 
     @Override
     public double calculateSalary(int hour){
+        System.out.println("Ejercicio 1: calcular salario de trabajador presencial");
         return (super.getPricePerHour() * hour) + EmployeeOnSite.petrolPrice;
     }
 
 
     @Deprecated(since = "Java 7", forRemoval = true)
     public int deprecatedMethods(){
+        System.out.println("Ejercicio 2: Metodo obsoleto: date.getDate(). Obtiene el día actual del mes");
         int date = new Date().getDate();
         return date;
     }
