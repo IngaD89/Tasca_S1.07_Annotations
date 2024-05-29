@@ -18,7 +18,8 @@ public class EmployeeOnSite extends Employee{
     }
 
 
-    @Deprecated(since = "Java 7", forRemoval = true)
+
+    @Deprecated
     public int deprecatedMethods(){
         System.out.println("Ejercicio 2: Metodo obsoleto: date.getDate(). Obtiene el día actual del mes");
         int date = new Date().getDate();

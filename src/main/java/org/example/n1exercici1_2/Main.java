@@ -1,6 +1,7 @@
 package org.example.n1exercici1_2;
 
 public class Main {
+    @SuppressWarnings("deprecation")
     public static void main(String[] args) {
         Employee employeeOnline = new EmployeeOnline(
                 "trabajador online",
